@@ -60,36 +60,23 @@ print("""
 let luftFeuchtigkeit: Int = 30
 let luftFeuchtigkeitKlima: Int = 24
 var istDasLichtAn: Bool = true
-let istJemandZuHause: Bool = true
+let istJemandZuHause: Bool = false
 let wasserVerbrauch: Int = 500
 
 if luftFeuchtigkeit > luftFeuchtigkeitKlima {
-    print("die Luftfeuchtigkeit entspricht noch nicht deinen Wünschen")}
-else if luftFeuchtigkeit < luftFeuchtigkeitKlima {
-    print("die Luftfeuchtigkeit entspricht deinen erwartungen")}
+    print("Entfeuchter einschalten")}
 
-if istDasLichtAn == true {
-    print("Das Licht im Raum ist an")
+if istDasLichtAn && !istJemandZuHause{
+    print("Das Licht soll ausgeschaltet werden")
 }
-else if istDasLichtAn == false {
-    print("Das Licht ist aus")
+if wasserVerbrauch >= 400 {
+    print("Hoher Wasserverbrauch")
 }
-if istJemandZuHause == true {
-    print("Es ist jemand zu Hause")
+if luftFeuchtigkeit != luftFeuchtigkeitKlima {
+    print("Luftfeuchtigkeit anpassen")
 }
-else if istJemandZuHause == false {
-    print("Es ist niemand zu Hause")
-}
-
-if wasserVerbrauch > 400 {
-    print("Der Verbrauch ist höher als 400")
-}
-else if wasserVerbrauch < 400 {
-    print("Der Verbrauch ist niederiger als 400")
-}
-if istJemandZuHause == istDasLichtAn {
+if istDasLichtAn == istJemandZuHause {
     print("Komfort gewährleistet")
-}
-else if istJemandZuHause != istDasLichtAn {
+}else{
     print("Komfort nicht gewährleistet")
 }
