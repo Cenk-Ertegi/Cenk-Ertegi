@@ -154,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				553472A82C2E98F7008E13C0 /* Woche1 */,
+				553472DA2C329CCB008E13C0 /* Woche2 */,
 			);
 			path = "Coding-Challenges";
 			sourceTree = "<group>";
@@ -164,7 +165,6 @@
 				553472B32C2E9918008E13C0 /* Tag 1 */,
 				553472BE2C2E993C008E13C0 /* Tag 2 */,
 				553472C92C2E996C008E13C0 /* Tag 3 */,
-				553472D42C2E9986008E13C0 /* Tag 4 */,
 			);
 			path = Woche1;
 			sourceTree = "<group>";
@@ -199,6 +199,14 @@
 				553472D52C2E9986008E13C0 /* main.swift */,
 			);
 			path = "Tag 4";
+			sourceTree = "<group>";
+		};
+		553472DA2C329CCB008E13C0 /* Woche2 */ = {
+			isa = PBXGroup;
+			children = (
+				553472D42C2E9986008E13C0 /* Tag 4 */,
+			);
+			path = Woche2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
