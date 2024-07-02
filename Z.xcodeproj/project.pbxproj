@@ -10,7 +10,6 @@
 		553472B52C2E9918008E13C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553472B42C2E9918008E13C0 /* main.swift */; };
 		553472C02C2E993C008E13C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553472BF2C2E993C008E13C0 /* main.swift */; };
 		553472CB2C2E996C008E13C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553472CA2C2E996C008E13C0 /* main.swift */; };
-		553472D62C2E9986008E13C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553472D52C2E9986008E13C0 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,7 +79,6 @@
 		553472C82C2E996C008E13C0 /* Tag 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tag 3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		553472CA2C2E996C008E13C0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		553472D32C2E9986008E13C0 /* Tag 4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tag 4"; sourceTree = BUILT_PRODUCTS_DIR; };
-		553472D52C2E9986008E13C0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				553472A82C2E98F7008E13C0 /* Woche1 */,
-				553472DA2C329CCB008E13C0 /* Woche2 */,
 			);
 			path = "Coding-Challenges";
 			sourceTree = "<group>";
@@ -191,22 +188,6 @@
 				553472CA2C2E996C008E13C0 /* main.swift */,
 			);
 			path = "Tag 3";
-			sourceTree = "<group>";
-		};
-		553472D42C2E9986008E13C0 /* Tag 4 */ = {
-			isa = PBXGroup;
-			children = (
-				553472D52C2E9986008E13C0 /* main.swift */,
-			);
-			path = "Tag 4";
-			sourceTree = "<group>";
-		};
-		553472DA2C329CCB008E13C0 /* Woche2 */ = {
-			isa = PBXGroup;
-			children = (
-				553472D42C2E9986008E13C0 /* Tag 4 */,
-			);
-			path = Woche2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +307,7 @@
 				TargetAttributes = {
 					553472982C2E98C4008E13C0 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					553472A62C2E98F7008E13C0 = {
 						CreatedOnToolsVersion = 15.4;
@@ -344,7 +326,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 553472942C2E98C4008E13C0 /* Build configuration list for PBXProject "Coding-Challenges" */;
+			buildConfigurationList = 553472942C2E98C4008E13C0 /* Build configuration list for PBXProject "Z" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -410,7 +392,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553472D62C2E9986008E13C0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,8 +519,11 @@
 		553472A12C2E98C4008E13C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Coding-Challenges/Woche2/Coding-Challenges-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -547,8 +531,10 @@
 		553472A22C2E98C4008E13C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Coding-Challenges/Woche2/Coding-Challenges-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -646,7 +632,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		553472942C2E98C4008E13C0 /* Build configuration list for PBXProject "Coding-Challenges" */ = {
+		553472942C2E98C4008E13C0 /* Build configuration list for PBXProject "Z" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5534729E2C2E98C4008E13C0 /* Debug */,
